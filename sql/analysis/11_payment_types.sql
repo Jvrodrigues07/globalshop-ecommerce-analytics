@@ -1,5 +1,22 @@
--- Analysis: Payment types distribution
--- Objective: understand customer payment preference
+/*
+Analysis: Payment Type Distribution
+
+Business Question:
+What payment methods do customers prefer?
+
+Objective:
+Measure distribution of payment methods to understand purchasing behavior.
+
+Tables Used:
+- payments
+
+Metric Created:
+- Payment Type Percentage Distribution
+
+Author: Ailton & João
+Project: GlobalShop E-commerce Analytics
+*/
+
 
 SELECT
     payment_type,
