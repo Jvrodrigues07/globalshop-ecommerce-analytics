@@ -1,5 +1,23 @@
--- Analysis: Top products by revenue
--- Objective: identify products that sustain marketplace revenue
+/*
+Analysis: Top Revenue Products
+
+Business Question:
+Which products generate most of the marketplace revenue?
+
+Objective:
+Identify products responsible for the largest share of revenue.
+
+Tables Used:
+- order_items
+- payments
+
+Metric Created:
+- Revenue per Product
+
+Author: João
+Project: GlobalShop E-commerce Analytics
+*/
+
 
 SELECT
     oi.product_id,
