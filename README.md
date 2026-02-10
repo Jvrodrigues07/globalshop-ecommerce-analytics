@@ -1,70 +1,73 @@
-# GlobalShop E‑commerce Analytics
+GlobalShop E‑commerce Analytics
+End‑to‑end data analysis project simulating the data team of an international marketplace.
 
-End‑to‑end data analysis project using the Brazilian Olist e‑commerce dataset.
-The goal is to simulate a real business analytics workflow: database ingestion, validation, exploratory analysis and business insights.
+The objective of this project is to investigate how the business grows, what drives revenue, and how customer behavior and logistics impact performance.
 
----
+Business Problem
+The company shows continuous growth in orders, but it is unclear:
 
-## 📊 Project Objective
-This project analyzes an e‑commerce operation to answer real business questions such as:
+if growth comes from new or returning customers
 
-- How is the company growing over time?
-- Which product categories generate the most revenue?
-- What is the customer purchasing behavior?
-- How do payments and installments affect sales?
-- Are logistics impacting customer experience?
+which products truly sustain revenue
 
----
+how customers prefer to pay
 
-## 🛠 Tech Stack
-- MySQL (Data storage & querying)
-- SQL (Joins, aggregations, validation)
-- Python (Data analysis — upcoming)
-- Power BI (Dashboard — upcoming)
-- Git & GitHub (Version control)
+whether delivery performance affects reliability
 
----
+The goal is to transform raw transactional data into actionable business insights.
 
-## 🗂 Dataset
-Brazilian E‑commerce Public Dataset by Olist  
-Contains information about:
+Dataset
+Brazilian Olist e‑commerce public dataset containing:
 
-- Customers
-- Orders
-- Order items
-- Payments
-- Products
-- Sellers
+orders
 
----
+customers
 
-## Phase 1 — Data Ingestion & Validation
-Steps performed:
+products
 
-1. Database schema creation
-2. Bulk CSV ingestion using `LOAD DATA INFILE`
-3. Referential integrity validation
-4. Data consistency checks
+payments
 
-### Final validated dataset
+logistics information
 
-| Table | Rows |
-|------|----|
-| orders | 99,441 |
-| order_items | 111,046 |
-| payments | 103,886 |
-| products | 32,340 |
-| customers | 99,441 |
+The dataset simulates a real marketplace operation with multiple sellers and nationwide deliveries.
 
-Database ready for analysis.
+Project Structure
+sql/     → data extraction and analytical queries
+python/  → data preparation and exploratory analysis
+powerbi/ → business dashboard
+docs/    → documentation and data dictionary
 
----
+Key Analyses Performed
+Growth Analysis
+Monthly revenue evolution shows steady expansion driven primarily by new customer acquisition rather than retention.
 
-## Phase 2 — Exploratory Data Analysis (In Progress)
-Business analysis using SQL to generate insights about revenue, customers and products.
+Customer Behavior
+Customer identifier structure prevents reliable repeat purchase tracking, indicating acquisition‑based growth model.
 
----
+Product Analysis
+Revenue is concentrated in a limited number of products, suggesting dependency on specific catalog segments.
 
-## Author
-Project developed as part of a data analytics learning portfolio.
+Payment Behavior
+Most transactions occur via credit card, indicating impulse and convenience purchases, while boleto usage reflects cautious buyers.
 
+Logistics Performance
+Average delivery time is approximately 12.5 days, but over 90% of orders arrive within the promised deadline, demonstrating operational reliability.
+
+Business Insights
+Growth is acquisition‑driven, not loyalty‑driven
+
+Marketplace depends on specific high‑impact products
+
+Customers rely heavily on credit for purchasing
+
+Delivery speed is moderate but highly predictable
+
+Tools Used
+SQL (data analysis)
+
+Python (data processing)
+
+Power BI (dashboard & storytelling)
+
+Author
+João Vitor Rodrigues Batista
