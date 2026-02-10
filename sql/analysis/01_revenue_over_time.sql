@@ -1,5 +1,23 @@
--- Analysis: Revenue over time
--- Objective: understand company growth month by month
+/*
+Analysis: Revenue Over Time
+
+Business Question:
+How did the marketplace revenue evolve over time?
+
+Objective:
+Measure monthly revenue to identify growth phases and seasonality patterns.
+
+Tables Used:
+- orders
+- payments
+
+Metric Created:
+- Monthly Revenue (sum of payments grouped by month)
+
+Author: João
+Project: GlobalShop E-commerce Analytics
+*/
+
 
 SELECT
     DATE_FORMAT(o.order_purchase_timestamp, '%Y-%m') AS month,
