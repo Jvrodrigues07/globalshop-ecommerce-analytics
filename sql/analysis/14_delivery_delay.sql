@@ -1,5 +1,22 @@
--- Analysis: Delivery delay
--- Objective: measure late deliveries
+/*
+Analysis: Delivery Delay
+
+Business Question:
+Are orders delivered within the promised delivery date?
+
+Objective:
+Calculate the percentage of late deliveries to evaluate logistics reliability.
+
+Tables Used:
+- orders
+
+Metric Created:
+- Late Delivery Rate (% of orders delivered after estimated date)
+
+Author: João
+Project: GlobalShop E-commerce Analytics
+*/
+
 
 SELECT
     CASE
