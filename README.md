@@ -160,10 +160,12 @@ The marketplace demonstrates sustainable and scalable growth supported by custom
 # 📷 Dashboard Preview
 
 Executive Dashboard
+
 <img width="868" height="491" alt="dashboard 1" src="https://github.com/user-attachments/assets/4680dec2-c0a7-4b37-88ba-4a11c23e8128" />
 
 
 Business Insights
+
 <img width="875" height="485" alt="bussines 2" src="https://github.com/user-attachments/assets/26fde16a-c425-4ce1-b2d9-9f98590c958f" />
 
 
